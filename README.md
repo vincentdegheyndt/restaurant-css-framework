@@ -5,7 +5,7 @@ Restaurants :
 - Bouchée de pain
     "Sain et pas cher"
 
-    "Parce qu'il ne faudrait choisir entre manger bon et manger bien, <b>Bouchée de pain</b> se donne pour mission d'apporter les bienfaits d'une cuisine saine, appétissante et accessible à toutes les bourses."
+    "Parce qu'il ne faudrait pas choisir entre manger bon et manger bien, <b>Bouchée de pain</b> se donne pour mission d'apporter les bienfaits d'une cuisine saine, appétissante et accessible à toutes les bourses."
     
     carte 1
         Pastafolies 
@@ -182,6 +182,11 @@ Checklist
     Compatible xs et md !!!!!!!!!
 
     accueil : Jumbotron, 2 panels news.
+        titre
+        menu
+        image avec nom au milieu
+        caroussel jumbotron
+        panels
     Carte : menus liste et badges
     Photos : 10 photos min et 3 pages par page
     Restaurants : adresse, plan d'accès, horaires, 2 restos
