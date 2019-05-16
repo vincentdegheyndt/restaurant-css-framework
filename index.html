@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Maiden+Orange" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="resto.css">
     <title>Accueil</title>
 </head>
@@ -14,16 +15,21 @@
     <div class="content">
         <!--Titre-->
         <header>
-            <h1>Pour une Bouchée de pain...</h1>
+            <img class="rounded mx-auto d-block" src="images/logodd.png" alt="Logo">
         </header>
         <!--fin Titre-->
         <!--Photo du resto-->
-        <img class="banderolle" src="images/banderolle3.jpg" alt="Photographie du restaurant">
+        <div class="container2">
+            <div class="row">
+                <img class="banderolle col-12 d-none d-md-block" src="images/banderolle3.jpg" alt="Photographie du restaurant">
+                <img class="banderolle col-12 d-md-none" src="images/banderolle3_small.jpg" alt="Photographie du restaurant">
+            </div>
+        </div>
         <!--menu-->
         <nav class="navbar navbar-light bg-light navbar-expand-lg">
                 <a href="#" class="navbar-brand"></a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
-                    open
+                    menu
                     <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarcollapse">
@@ -35,7 +41,7 @@
                         <a href="carte.html" class="nav-link">Carte</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="photos/html" class="nav-link">Photos</a>
+                        <a href="photos.html" class="nav-link">Photos</a>
                     </li>
                     <li class="navbar-item">
                         <a href="restaurants.html" class="nav-link">Restaurants</a>
@@ -49,19 +55,19 @@
         <!--fin menu-->
         <section class="container">
             <div class="row row1">
-                <article class="col-7" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<!--                <article class="col-12 col-md-7" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     
                         </ol>
-                        <div class="carousel-inner">
+                        <div class="carousel-inner col-10">
                             <div class="carousel-item active">
                                 <img class="d-block w-100" src="images/car1.jpg" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="images/car2.jpg" alt="Second slide">
+                                <img class="d-block h-100" src="images/car2.jpg" alt="Second slide">
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/car3.jpg" alt="Third slide">
@@ -75,28 +81,41 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Suivant</span>
                         </a>
-                </article>
+                </article>-->
         <!--Jumbotron-->
-                <article class="jumbotron col-5">
-                    <h1>Pour Une bouchée de pain</h1>
-                    <p>Sain et pas cher !</p>
-                    <p>Parce qu'il ne faudrait choisir entre manger bon et manger bien, <b>Bouchée de pain</b> se donne pour mission d'apporter les bienfaits d'une cuisine <b>gluten-free</b> saine, appétissante et accessible à toutes les bourses.</p>
+                <article class="jumbotron col-12 col-md-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img class="burger"src="images/car1.jpg" alt="burger">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h1>Sain et à prix abordable</h1>
+                            <p>Parce qu'il ne faudrait jamais choisir entre manger bon et manger bien, <b>Bouchée de pain</b> se donne pour mission d'apporter les bienfaits d'une cuisine <b>gluten-free</b> saine, appétissante et accessible à toutes les bourses.</p>
+                            <P>Burger, pâtes, pizzas, risottos, cuisine du monde...</P>
+                            <p>Sans oublier le plaisir des desserts ! Notre Bannofee est le meilleur d'Europe !</p>
+                        </div>
+                    </div>
+
                 </article>
         <!--panels-->
-                <article class="card col-5 offset-0">
-                    <img class="card-img-top" alt="Pâtes" src="images/pasta.jpg">
+                <article class="card col-12 col-md-5 offset-0">
+                    <img class="card-img-top" alt="Pâtes" src="images/pasta2.jpg">
                     <div class="card-body">
                         <h5 class="card-title">Pastafolies</h5>
                         <p class="card-text">
-                            Au maïs, au riz, au sarrasin, multi-céréales,...
+                            Au maïs, au riz, au sarrasin,aux pois-chiches, aux corails,  multi-céréales,...
                             le mardi, c'est pastas à volontés pour tous les goûts et à toutes les sauces !
+                            Ensemble, réinventons les pâtes !
+                            <br>
+                            <br>
+                            
                         </p>
                     </div>
                     <div class="card-body">
                         <a href="#" class="btn btn-primary">Plus d'info</a>
                     </div>
                 </article>
-                <article class="card col-5 offset-2">
+                <article class="card col-12 col-md-5 offset-0 offset-md-2">
                     <img class="card-img-top" alt="Cours" src="images/cooking.jpg">
                     <div class="card-body">
                         <h5 class="card-title">Cuisine saine</h5>

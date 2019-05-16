@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Maiden+Orange" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="resto.css">
     <title>Restaurants</title>
 </head>
@@ -13,11 +14,16 @@
     <div class="content">
         <!--Titre-->
         <header>
-            <h1>Pour une Bouchée de pain...</h1>
+            <img class="rounded mx-auto d-block" src="images/logodd.png" alt="Logo">
         </header>
         <!--fin Titre-->
         <!--Photo du resto-->
-        <img class="banderolle" src="images/banderolle3.jpg" alt="Photographie du restaurant">
+        <div class="container2">
+            <div class="row">
+                <img class="banderolle col-12 d-none d-md-block" src="images/banderolle3.jpg" alt="Photographie du restaurant">
+                <img class="banderolle col-12 d-md-none" src="images/banderolle3_small.jpg" alt="Photographie du restaurant">
+            </div>
+        </div>
         <!--menu-->
         <nav class="navbar navbar-light bg-light navbar-expand-lg">
             <a href="#" class="navbar-brand"></a>
@@ -34,7 +40,7 @@
                         <a href="carte.html" class="nav-link">Carte</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="photos/html" class="nav-link">Photos</a>
+                        <a href="photos.html" class="nav-link">Photos</a>
                     </li>
                     <li class="navbar-item">
                         <a href="restaurants.html" class="nav-link">Restaurants</a>
@@ -49,13 +55,32 @@
         <section class="container">
             <h2 class="contact">Découvrez nos différentes enseignes</h2>
             <div class="row">
-                <article class="card col-5 offset-0">
-                    <img class="card-img-top" alt="Pâtes" src="images/pasta.jpg">
+                <article class="card col-12 col-md-5">
+                    <img class="card-img-top" alt="Pâtes" src="images/bxl.jpg">
                     <div class="card-body">
-                        <h5 class="card-title">Bruxelles</h5>
-                        <p class="card-text">Rue du Sarrasin n°30, 1000 Bruxelles</p>
-                        <p>02/222.22.22</p>
-                        <div class="container" style="margin-top:30px">
+                        <!--Card-->
+                        <div class="card card-cascade narrower">
+                            <!--Card image-->
+                            <div class="view view-cascade gradient-card-header blue-gradient">
+                            <h5 class="mb-0">Bruxelles</h5>
+                            </div>
+                            <!--/Card image-->                    
+                            <!--Card content-->
+                            <div class="card-body card-body-cascade text-center">                    
+                                <!--Google map-->
+                                <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+                                    <iframe src="https://maps.google.com/maps?q=Barcelona&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>   
+                                <div class="coord">
+                                    <p class="card-text">Rue du Sarrasin n°30, 1000 Bruxelles</p>
+                                    <p>02/222.22.22</p>   
+                                </div>
+                            </div>
+                            <!--/.Card content-->                       
+                        </div>
+                        <!--/.Card-->
+                        <div class="containertable" style="margin-top:30px">
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -104,15 +129,32 @@
                         </div>
                     </div>
                 </article>
-                <article class="card col-5 offset-2">
-                    <img class="card-img-top" alt="Cours" src="images/cooking.jpg">
+                <article class="card col-12 col-md-5 offset-md-2">
+                    <img class="card-img-top" alt="Cours" src="images/waterloo.jpg">
                     <div class="card-body">
-                        <h5 class="card-title">Waterloo</h5>
-                        <p class="card-text">
-                            Rue du petit Epautre n°29, 1410 Waterloo
-                        </p>
-                        <p>02/333.33.33</p>
-                        <div class="container" style="margin-top:30px">
+                        <!--Card-->
+                        <div class="card card-cascade narrower">
+                            <!--Card image-->
+                            <div class="view view-cascade gradient-card-header blue-gradient">
+                            <h5 class="mb-0">Waterloo</h5>
+                            </div>
+                            <!--/Card image-->                    
+                            <!--Card content-->
+                            <div class="card-body card-body-cascade text-center">                    
+                                <!--Google map-->
+                                <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+                                    <iframe src="https://maps.google.com/maps?q=Barcelona&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div> 
+                                <div class="coord">
+                                    <p class="card-text">Rue de l'amarante n°29, 1410 Waterloo</p>
+                                    <p>02/333.33.33</p>  
+                                </div>
+                            </div>
+                            <!--/.Card content-->                        
+                        </div>
+                        <!--/.Card-->
+                        <div class="containertable" style="margin-top:30px">
                             <table class="table">
                                 <thead>
                                     <tr>

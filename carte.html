@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Maiden+Orange" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="resto.css">
-    <title>Accueil</title>
+    <title>Carte</title>
 </head>
 <body>
     <div class="background_image"></div>
     <div class="content">
         <!--Titre-->
         <header>
-            <h1>Pour une Bouchée de pain...</h1>
+            <img class="rounded mx-auto d-block" src="images/logodd.png" alt="Logo">
         </header>
         <!--fin Titre-->
         <!--Photo du resto-->
-        <img class="banderolle" src="images/banderolle3.jpg" alt="Photographie du restaurant">
+        <div class="container2">
+            <div class="row">
+                <img class="banderolle col-12 d-none d-md-block" src="images/banderolle3.jpg" alt="Photographie du restaurant">
+                <img class="banderolle col-12 d-md-none" src="images/banderolle3_small.jpg" alt="Photographie du restaurant">
+            </div>
+        </div>
         <!--menu-->
         <nav class="navbar navbar-light bg-light navbar-expand-lg">
                 <a href="#" class="navbar-brand"></a>
@@ -28,19 +34,19 @@
                 <div class="collapse navbar-collapse" id="navbarcollapse">
                     <ul class="navbar-nav ml-auto mr-auto">
                         <li class="navbar-item">
-                            <a href="#" class="nav-link">Accueil</a>
+                            <a href="index.html" class="nav-link">Accueil</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#" class="nav-link">Carte</a>
+                            <a href="carte.html" class="nav-link">Carte</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#" class="nav-link">Photos</a>
+                            <a href="photos.html" class="nav-link">Photos</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#" class="nav-link">restaurants</a>
+                            <a href="restaurants.html" class="nav-link">Restaurants</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#" class="nav-link">Contacts</a>
+                            <a href="Contacts.html" class="nav-link">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -48,69 +54,106 @@
         <!--fin menu-->
         <section class="container">
             <div class="row row1">
-                <article class="col-7" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/car1.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/car2.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/car3.jpg" alt="Third slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Précédent</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Suivant</span>
-                        </a>
-                </article>
-        <!--Jumbotron-->
-                <article class="jumbotron col-5">
-                    <h1>Pour Une bouchée de pain</h1>
-                    <p>Sain et pas cher !</p>
-                    <p>Parce qu'il ne faudrait choisir entre manger bon et manger bien, <b>Bouchée de pain</b> se donne pour mission d'apporter les bienfaits d'une cuisine <b>gluten-free</b> saine, appétissante et accessible à toutes les bourses.</p>
-                </article>
-        <!--panels-->
-                <article class="card col-5 offset-0">
-                    <img class="card-img-top" alt="Pâtes" src="images/pasta.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">Pastafolies</h5>
-                        <p class="card-text">
-                            Au maïs, au riz, au sarrasin, multi-céréales,...
-                            le mardi, c'est pastas à volontés pour tous les goûts et à toutes les sauces !
-                        </p>
-                    </div>
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary">Plus d'info</a>
-                    </div>
-                </article>
-                <article class="card col-5 offset-2">
-                    <img class="card-img-top" alt="Cours" src="images/cooking.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">Cuisine saine</h5>
-                        <p class="card-text">
-                            Envie de devenir un chef vous-même ?
-                            Venez participer à nos cours de cuisine bio et gluten-free.
-                            Vous avez une allergie peu courante ? Tant mieux ! 
-                            Chez "Cuisine saine", on aime relever des défis.. tous ensemble !
-                        </p>
-                    </div>
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary">Je m'inscris</a>
-                    </div>
-                </article>
-            <!--fin panels-->
+                <h1>En cours</h1>
+                <div>
+                    <p>
+                        <h3>Sharing</h3>
+                            <h4>Guacamole & patate douce</h4>
+                            Patate douce- graines torréfiées - avocat - oignons rouges
+                            7,50€
+                            <h4>Quesadilla Jalapeños</h4>
+                            Fromage, coriandre et jalapeños, guacamole, salsa & crème épaisse
+                            9,50€
+                            <h4>Quesadilla poivrons</h4>
+                            Poivrons, fromage, coriandre, guacamole
+                            9,50€
+                            <h4>Nachos Locos for 2 pers</h4>
+                            Nachos gratinés au four guacamole, salsa & sour cream
+                            10,00€   
+                    </p>                             
+                    <p>
+                        <h3>Plats</h3>
+                        <h4>Boeuf confit</h4>                
+                            Boeuf basse température - laqué sauce Bbq - graines torréfiées - jus de cuisson
+                            18,00€                        
+                        <h4>Fish & Dips</h4>                
+                            Cabillaud en accras - chutney orange gingembre - sauce verte et frites
+                            15,00€                        
+                        <h4>Poulet</h4>                
+                            Filet de poulet grillé- épices Cajun - crème coco - noix de cajou grillées - frites
+                            16,50€                        
+                        <h4>Saumon</h4>                
+                            Saumon cuit basse température - graines de moutardes - algues - émulsion yuzu - pomme de terre douce
+                            17,00€    
+                    </p>                    
+                    <p>
+                        <h3>Supplément</h3>
+                        Pain sans gluten
+                        2,00€                        
+                        Fromage
+                        1,50€                    
+                        Bacon
+                        1,50€                        
+                        2 Tacos
+                        2,50€                        
+                        Haché burger de boeuf
+                        4,00€                        
+                        Frites, patates douces ou salade
+                        4,00€   
+                    </p>                     
+                    <p>
+                        <h3>Burgers</h3>
+                        <h4>Super Moine</h4>                
+                            Bun fait maison - Boeuf - confit d’oignons - bacon grillé - vieux gouda - oignon grillés - moutarde - roquette - frites
+                            16,50€                        
+                        <h4>Cheese</h4>                
+                            Bun fait maison - Boeuf - salade - mayonnaise - tomate - cornichon - oignons rouges - vieux gouda - frites
+                            16,00€                        
+                        <h4>Gringo</h4>                
+                            Bun fait maison - Haché de boeuf - salsa maison, iceberg - jalapeños - guacamole, vieux gouda, mayonnaise - oignons rouges - frites
+                            17,00€                        
+                        <h4>Popeye</h4>                
+                            Bun fait maison - Burger d’épinards - confit d’oignons - salade - fromage frais - courgette - pommes de terre douces
+                            17,00€                        
+                        <h4>Nordic</h4>                
+                            Bun fait à l’encre de sèche - Saumon basse température, betterave - roquette - sauce wasabi câpres - fromage frais, frites
+                            17,00€                        
+                        <h3>Kids</h3>
+                        <h4>Blanc de poulet grillé frites Ou fish & dips frites</h4>
+                            10,00€
+                        <h4>Viande Hachée boeuf</h4>
+                            1,00€ +                        
+                        <h4>Hamburger kids</h4>
+                            2,00€ +
+                    </p>
+                    <p>
+                        <h3>Glace</h3>
+                    </p>
+                        
+                    <p>
+                        <h3>Tacos & salades</h3>
+                        <h4>Tacos ceviche</h4>                
+                            Saumon ceviche - salade de tomate - crème épaisse - guacamole - houmous - sauce verte citronnée - aubergine & courgette grillées - Tortillas
+                            16,00€                        
+                        <h4>Tacos Végé</h4>                
+                            Aubergine - courgette - salade de tomate - patate douces grillées - crème épaisse - guacamole - houmous - sauce verte citronnée - Tortillas
+                            16,00€                        
+                        <h4>Tacos Boeuf</h4>                
+                            Boeuf - salade de tomate - Aubergine et courgette grillées - crème épaisse - guacamole - houmous - sauce verte citronnée - Tortillas
+                            16,00€                        
+                        <h4>Salad L’amour Fou</h4>                
+                            Quinoa - Salade mixte - patate douce - courgette grillée - amandes torréfiées - herbes fraîches
+                            13,00€                        
+                        <h3>Option pour salade l’amour Fou</h3>
+                            <h4>Saumon rôti</h4>
+                            3,00€ +                        
+                            <h4>Portobello fromage de chèvre</h4>
+                            3,00€ +                        
+                            <h4>Mozzarella di buffala</h4>
+                            3,00€ + 
+                    </p>
+                    </p>
+                </div>
             </div>
         </section>
     </div>
