@@ -1,12 +1,26 @@
 L'idée pour ce restaurant était de créer une enseigne gluten-free et bio misant sur une nourriture saine et appétissante.
 Le titre évoquant le pain est évidemment un jeu de mot car le pain est la première nourriture que les personnes intolérantes au gluten ne peuvent plus manger.
-Le gluten se trouve essentillement deans la farine de blé ce qui impose aux personnes intolérantes de manger du pain spécial à base de farine de riz, de sarrasin, ...
+Le gluten se trouve essentiellement dans la farine de blé ce qui impose aux personnes intolérantes de manger du pain spécial à base de farine de riz, de sarrasin, ...
 La même idée s'applique également aux pâtes, aux pizzas, au hamburgers, aux tartes,...
-Il est donc tout à fait possible pour une personne intolérante au gluten de manger normalement chez elle mais beaucoup de restaurants ne propose pas encore d'options gluten-free vraiment appétissante d'ou l'intérêt de créer un restaurant qui propose des pâtes, pizzas, dessert et pain sans-gluten aux personnes concernées.
+Il est donc tout à fait possible pour une personne intolérante au gluten de manger normalement chez elle mais beaucoup de restaurants ne propose pas encore d'options gluten-free intéressante d'ou l'intérêt de créer un restaurant qui propose des pâtes, pizzas, dessert et pain sans-gluten aux personnes concernées.
 
 Pour celà, je voulais donc intégrer le mot pain dans le titre et utiliser un background qui illustre le propos et aère également la présentation du site.
-La majorité du contenu du site est ensuite intégré dans une grid bootstrap avec un fond légèrement transparant afin que le pain reste visible en tout temps
-modèle
+La majorité du contenu est ensuite intégrée dans une grid bootstrap avec un fond légèrement transparent et d'importantes margins gauche et droite en résolution desktop afin que le pain reste visible en tout temps.
+Sur suggestion du coach, j'ai utilisé une fonction js afin de coller le menu au sommet de la page après un scroll vers le bas pour qu'il soit toujours accessible pour l'utilisateur.
+
+Concernant la page restaurants, pour assurer une bonne mis-en-page pour les résolutions xs et md, j'ai réalisé 2 versions différentes du tableau des horaires : une en trois colonnes pour la résolution md et une en deux colonnes pour la résolution xs. Les propriétés d-none et d-block se chargent ensuite d'afficher la bonne version en fonction de la résolution de l'écran.
+La photo de restaurant apparaissant au-dessus du menu est également affichée selon ce principe.
+
+Les principales difficultés furent de gérer la taille de l'affichage des images car tant le fichier css que le html en bootstrap pouvaient être utilisés à ces fins.
+
+De même, la gestion de la transparence présenta un léger challenge car il fallait faire en sorte que la transparence n'affecte que la couleur de fond et pas le contenu.
+Le problème fut régler en codant la background color en RGBa. 
+
+Enfin, la superposition du logo "Bouchée de pain" sur la banderolle (photo du restaurant) fut la dernière difficulté et fut réglée via une petite révision des propriétés z-index et position (relative et absolute).
+
+
+Ci-dessous, les données de références pour le contenu du site.
+Les adresses sont bien évidemment fictives et évoquent chacunes une céréale utilisées dans les préparations sans gluten.
 
 Restaurants :
 
@@ -171,18 +185,3 @@ Restaurants :
         
         Mozzarella di buffala
         3,00€ + 
-
-Checklist
-
-    Compatible xs et md !!!!!!!!!
-
-    accueil : Jumbotron, 2 panels news.
-        titre
-        menu
-        image avec nom au milieu
-        caroussel jumbotron
-        panels
-    Carte : menus liste et badges
-    Photos : 10 photos min et 3 pages par page
-    Restaurants : adresse, plan d'accès, horaires, 2 restos
-    Contact : form (nom, prenom, e-mail, liste déroulante (objet du mesage avec select et options), bouten de send glyphicon.) Balise sémantique !!
