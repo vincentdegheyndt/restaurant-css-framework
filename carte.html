@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Maiden+Orange" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="resto.css">
     <title>Carte</title>
 </head>
@@ -14,21 +15,23 @@
     <div class="content">
         <!--Titre-->
         <header>
-            <img class="rounded mx-auto d-block" src="images/logodd.png" alt="Logo">
+
         </header>
         <!--fin Titre-->
         <!--Photo du resto-->
         <div class="container2">
-            <div class="row">
-                <img class="banderolle col-12 d-none d-md-block" src="images/banderolle3.jpg" alt="Photographie du restaurant">
-                <img class="banderolle col-12 d-md-none" src="images/banderolle3_small.jpg" alt="Photographie du restaurant">
+                <div class="row position-relative">
+                    <img class="mx-auto d-relative d-none d-md-block h-100 logo" src="images/logo.png" alt="Logo">
+                    <img class="mx-auto d-relative d-md-none h-100 w-105 logoxs" src="images/logo.png" alt="Logo">
+                    <img class="banderolle col-12 d-none d-md-block" src="images/banderolle3.jpg" alt="Photographie du restaurant">
+                    <img class="banderollexs d-relative col-12 d-md-none img-fluid" src="images/banderolle3_small.jpg" alt="Photographie du restaurant">
+                </div>
             </div>
-        </div>
         <!--menu-->
-        <nav class="navbar navbar-light bg-light navbar-expand-lg">
+        <nav id="navbar" class="navbar navbar-light bg-light navbar-expand-lg">
                 <a href="#" class="navbar-brand"></a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
-                    open
+                    menu
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarcollapse">
@@ -54,113 +57,164 @@
         <!--fin menu-->
         <section class="container">
             <div class="row row1">
-                <h1>En cours</h1>
+                <h1>Carte</h1>
                 <div>
-                    <p>
-                        <h3>Sharing</h3>
+                    <div class="jumbotron c2">
+                        <h3><i class="fas fa-pepper-hot"></i> Sharing</h3>
                             <h4>Guacamole & patate douce</h4>
                             Patate douce- graines torréfiées - avocat - oignons rouges
-                            7,50€
+                                <p><span class="badge badge-dark">7,50€</span></p>
                             <h4>Quesadilla Jalapeños</h4>
                             Fromage, coriandre et jalapeños, guacamole, salsa & crème épaisse
-                            9,50€
+                                <p><span class="badge badge-dark">9,50€</span></p>                            
                             <h4>Quesadilla poivrons</h4>
                             Poivrons, fromage, coriandre, guacamole
-                            9,50€
+                                <p><span class="badge badge-dark">9,50€</span></p> 
                             <h4>Nachos Locos for 2 pers</h4>
                             Nachos gratinés au four guacamole, salsa & sour cream
-                            10,00€   
-                    </p>                             
-                    <p>
-                        <h3>Plats</h3>
+                                <p><span class="badge badge-dark">10,00€</span></p>    
+                    </div>                           
+                    <div class="jumbotron c2">
+                        <h3><i class="fas fa-drumstick-bite"></i> Plats</h3>
                         <h4>Boeuf confit</h4>                
                             Boeuf basse température - laqué sauce Bbq - graines torréfiées - jus de cuisson
-                            18,00€                        
+                            <p><span class="badge badge-dark">18,00€</span></p>                         
                         <h4>Fish & Dips</h4>                
                             Cabillaud en accras - chutney orange gingembre - sauce verte et frites
-                            15,00€                        
+                            <p><span class="badge badge-dark">15,00€</span></p>                         
                         <h4>Poulet</h4>                
                             Filet de poulet grillé- épices Cajun - crème coco - noix de cajou grillées - frites
-                            16,50€                        
+                            <p><span class="badge badge-dark">16,50€</span></p>                         
                         <h4>Saumon</h4>                
                             Saumon cuit basse température - graines de moutardes - algues - émulsion yuzu - pomme de terre douce
-                            17,00€    
-                    </p>                    
-                    <p>
-                        <h3>Supplément</h3>
-                        Pain sans gluten
-                        2,00€                        
-                        Fromage
-                        1,50€                    
-                        Bacon
-                        1,50€                        
-                        2 Tacos
-                        2,50€                        
-                        Haché burger de boeuf
-                        4,00€                        
-                        Frites, patates douces ou salade
-                        4,00€   
-                    </p>                     
-                    <p>
-                        <h3>Burgers</h3>
+                            <p><span class="badge badge-dark">17,00€</span></p>     
+                    </div>                    
+                    <div class="jumbotron c1">
+                        <h3><i class="fas fa-bread-slice"></i> Supplément</h3>
+                        <div class="container2">
+                            <div class="row">
+                                <div class="col-6 col-lg-4">
+                                        <h4>Pain sans gluten</h4>
+                                        <p><span class="badge badge-dark">2,00€</span></p>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                        <h4>Fromage</h4>
+                                        <p><span class="badge badge-dark">1,50€</span></p> 
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                        <h4>Bacon</h4>
+                                        <p><span class="badge badge-dark">1,50€</span></p> 
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                        <h4>2 Tacos</h4>
+                                        <p><span class="badge badge-dark">2,50€</span></p> 
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                        <h4>Haché burger de boeuf</h4>
+                                        <p><span class="badge badge-dark">4,00€</span></p>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                        <h4>Frites, patates douces ou salade</h4>
+                                        <p><span class="badge badge-dark">4,00€</span></p>
+                                </div>          
+                            </div>
+                        </div>
+  
+                    </div>                     
+                    <div class="jumbotron c2">
+                        <h3><i class="fas fa-hamburger"></i> Burgers</h3>
                         <h4>Super Moine</h4>                
                             Bun fait maison - Boeuf - confit d’oignons - bacon grillé - vieux gouda - oignon grillés - moutarde - roquette - frites
-                            16,50€                        
+                            <p><span class="badge badge-dark">16,50€</span></p>                        
                         <h4>Cheese</h4>                
                             Bun fait maison - Boeuf - salade - mayonnaise - tomate - cornichon - oignons rouges - vieux gouda - frites
-                            16,00€                        
+                            <p><span class="badge badge-dark">16,00€</span></p>                       
                         <h4>Gringo</h4>                
                             Bun fait maison - Haché de boeuf - salsa maison, iceberg - jalapeños - guacamole, vieux gouda, mayonnaise - oignons rouges - frites
-                            17,00€                        
+                            <p><span class="badge badge-dark">17,00€</span></p>                        
                         <h4>Popeye</h4>                
                             Bun fait maison - Burger d’épinards - confit d’oignons - salade - fromage frais - courgette - pommes de terre douces
-                            17,00€                        
+                            <p><span class="badge badge-dark">17,00€</span></p>                        
                         <h4>Nordic</h4>                
                             Bun fait à l’encre de sèche - Saumon basse température, betterave - roquette - sauce wasabi câpres - fromage frais, frites
-                            17,00€                        
-                        <h3>Kids</h3>
+                            <p><span class="badge badge-dark">17,00€</span></p>                        
+                        <h3><i class="fas fa-child"></i> Kids</h3>
                         <h4>Blanc de poulet grillé frites Ou fish & dips frites</h4>
-                            10,00€
+                        <p><span class="badge badge-dark">10,00€</span></p>
                         <h4>Viande Hachée boeuf</h4>
-                            1,00€ +                        
+                        <p><span class="badge badge-dark">1,00€ + </span></p>                        
                         <h4>Hamburger kids</h4>
-                            2,00€ +
-                    </p>
-                    <p>
-                        <h3>Glace</h3>
-                    </p>
+                        <p><span class="badge badge-dark">2,00€ + </span></p>  
+                    </div>
                         
-                    <p>
-                        <h3>Tacos & salades</h3>
+                    <div class="jumbotron c2">
+                        <h3><i class="fas fa-carrot"></i> Tacos & salades</h3>
                         <h4>Tacos ceviche</h4>                
                             Saumon ceviche - salade de tomate - crème épaisse - guacamole - houmous - sauce verte citronnée - aubergine & courgette grillées - Tortillas
-                            16,00€                        
+                            <p><span class="badge badge-dark">16,00€</span></p>                          
                         <h4>Tacos Végé</h4>                
                             Aubergine - courgette - salade de tomate - patate douces grillées - crème épaisse - guacamole - houmous - sauce verte citronnée - Tortillas
-                            16,00€                        
+                            <p><span class="badge badge-dark">16,00€</span></p>                         
                         <h4>Tacos Boeuf</h4>                
                             Boeuf - salade de tomate - Aubergine et courgette grillées - crème épaisse - guacamole - houmous - sauce verte citronnée - Tortillas
-                            16,00€                        
+                            <p><span class="badge badge-dark">16,00€</span></p>                         
                         <h4>Salad L’amour Fou</h4>                
                             Quinoa - Salade mixte - patate douce - courgette grillée - amandes torréfiées - herbes fraîches
-                            13,00€                        
-                        <h3>Option pour salade l’amour Fou</h3>
-                            <h4>Saumon rôti</h4>
-                            3,00€ +                        
-                            <h4>Portobello fromage de chèvre</h4>
-                            3,00€ +                        
-                            <h4>Mozzarella di buffala</h4>
-                            3,00€ + 
-                    </p>
-                    </p>
+                            <p><span class="badge badge-dark">13,00€</span></p>                         
+                        <h3><i class="fas fa-plus"></i> Option pour salades</h3>
+                        <div class="container2">
+                            <div class="row">
+                                <div class="col-6 col-lg-4">
+                                        <h4>Saumon rôti</h4>
+                                        <p><span class="badge badge-dark">3,00€ +</span></p> 
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                        <h4>Portobello fromage de chèvre</h4>
+                                        <p><span class="badge badge-dark">3,00€ +</span></p> 
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                        <h4>Mozzarella di buffala</h4>
+                                        <p><span class="badge badge-dark">3,00€ +</span></p>  
+                                </div>
+                            </div>          
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
     <footer>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quidem earum consequuntur necessitatibus harum veniam voluptatem assumenda corporis quas provident reprehenderit, quam voluptates ea. Necessitatibus fuga alias nulla quidem id!
+            <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <a href="www.facebook.com"><p><i class="fab fa-facebook-f"></i> Notre page Facebook</p></a>
+                            <a href=""><p><i class="fab fa-yelp"></i> Profil Yelp</p></a>
+                            <a href=""><p><i class="fab fa-tripadvisor"></i> Trip Advisor</p></a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p><i class="fas fa-phone"></i> Bruxelles : 02/222.22.22</p>
+                            <p><i class="fas fa-phone"></i> Waterloo : 02/333.33.33</p>
+                            <p><i class="far fa-envelope"></i> Boucheedepain@restaurant.be</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
     </footer>
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

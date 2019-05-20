@@ -14,18 +14,20 @@
     <div class="content">
         <!--Titre-->
         <header>
-            <img class="rounded mx-auto d-block" src="images/logodd.png" alt="Logo">
+
         </header>
         <!--fin Titre-->
         <!--Photo du resto-->
         <div class="container2">
-            <div class="row">
-                <img class="banderolle col-12 d-none d-md-block" src="images/banderolle3.jpg" alt="Photographie du restaurant">
-                <img class="banderolle col-12 d-md-none" src="images/banderolle3_small.jpg" alt="Photographie du restaurant">
+                <div class="row position-relative">
+                    <img class="mx-auto d-relative d-none d-md-block h-100 logo" src="images/logo.png" alt="Logo">
+                    <img class="mx-auto d-relative d-md-none h-100 w-105 logoxs" src="images/logo.png" alt="Logo">
+                    <img class="banderolle col-12 d-none d-md-block" src="images/banderolle3.jpg" alt="Photographie du restaurant">
+                    <img class="banderollexs d-relative col-12 d-md-none img-fluid" src="images/banderolle3_small.jpg" alt="Photographie du restaurant">
+                </div>
             </div>
-        </div>
         <!--menu-->
-        <nav class="navbar navbar-light bg-light navbar-expand-lg">
+        <nav id="navbar" class="navbar navbar-light bg-light navbar-expand-lg">
             <a href="#" class="navbar-brand"></a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
                 menu
@@ -54,31 +56,76 @@
         <!--fin menu-->
         <section class="container">
             <h2>Délicieux et gluten-free</h2>
-            <div class="row">
-                <div class="col-12 col-md-4"><img src="images/photo1.jpg" alt="photo" class="photos"></div>
-                <div class="col-12 col-md-4"><img src="images/photo2.png" alt="photo" class="photos"></div>
-                <div class="col-12 col-md-4"><img src="images/photo3.jpg" alt="photo" class="photos"></div>
-            </div>
-            <div class="row row1">
-                    <nav aria-label="...">
-                        <ul class="pagination pagination-lg">
-                            <li class="page-item active" aria-current="page">
-                            <span class="page-link">
-                                1
-                                <span class="sr-only">(current)</span>
-                            </span>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="photos2.html">2</a></li>
-                            <li class="page-item"><a class="page-link" href="photos3.html">3</a></li>
-                        </ul>
-                    </nav>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">3</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="row gallerie">
+                            <div class="col-12 col-md-4"><img src="images/photo1.jpg" alt="photo" class="photos"></div>
+                            <div class="col-12 col-md-4"><img src="images/photo2.png" alt="photo" class="photos"></div>
+                            <div class="col-12 col-md-4"><img src="images/photo3.jpg" alt="photo" class="photos"></div>
+                        </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="row">
+                            <div class="col-12 col-md-4"><img src="images/photo4.jpg" alt="photo" class="photos"></div>
+                            <div class="col-12 col-md-4"><img src="images/photo5.jpg" alt="photo" class="photos"></div>
+                            <div class="col-12 col-md-4"><img src="images/photo6.jpg" alt="photo" class="photos"></div>
+                        </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="row">
+                            <div class="col-12 col-md-4"><img src="images/photo7.jpg" alt="photo" class="photos"></div>
+                            <div class="col-12 col-md-4"><img src="images/photo8.jpg" alt="photo" class="photos"></div>
+                            <div class="col-12 col-md-4"><img src="images/photo9.jpg" alt="photo" class="photos"></div>
+                            <div class="col-12 col-md-4"><img src="images/photo10.jpg" alt="photo" class="photos"></div>
+                        </div>
+                </div>
             </div>
         </section>
+        
     </div>
 
     <footer>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quidem earum consequuntur necessitatibus harum veniam voluptatem assumenda corporis quas provident reprehenderit, quam voluptates ea. Necessitatibus fuga alias nulla quidem id!
+        <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <a href="www.facebook.com"><p><i class="fab fa-facebook-f"></i> Notre page Facebook</p></a>
+                        <a href=""><p><i class="fab fa-yelp"></i> Profil Yelp</p></a>
+                        <a href=""><p><i class="fab fa-tripadvisor"></i> Trip Advisor</p></a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p><i class="fas fa-phone"></i> Bruxelles : 02/222.22.22</p>
+                        <p><i class="fas fa-phone"></i> Waterloo : 02/333.33.33</p>
+                        <p><i class="far fa-envelope"></i> Boucheedepain@restaurant.be</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
     </footer>
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

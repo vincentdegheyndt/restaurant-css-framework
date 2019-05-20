@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Maiden+Orange" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="resto.css">
     <title>Restaurants</title>
 </head>
@@ -14,21 +15,23 @@
     <div class="content">
         <!--Titre-->
         <header>
-            <img class="rounded mx-auto d-block" src="images/logodd.png" alt="Logo">
+
         </header>
         <!--fin Titre-->
         <!--Photo du resto-->
         <div class="container2">
-            <div class="row">
-                <img class="banderolle col-12 d-none d-md-block" src="images/banderolle3.jpg" alt="Photographie du restaurant">
-                <img class="banderolle col-12 d-md-none" src="images/banderolle3_small.jpg" alt="Photographie du restaurant">
+                <div class="row position-relative">
+                    <img class="mx-auto d-relative d-none d-md-block h-100 logo" src="images/logo.png" alt="Logo">
+                    <img class="mx-auto d-relative d-md-none h-100 w-105 logoxs" src="images/logo.png" alt="Logo">
+                    <img class="banderolle col-12 d-none d-md-block" src="images/banderolle3.jpg" alt="Photographie du restaurant">
+                    <img class="banderollexs d-relative col-12 d-md-none img-fluid" src="images/banderolle3_small.jpg" alt="Photographie du restaurant">
+                </div>
             </div>
-        </div>
         <!--menu-->
-        <nav class="navbar navbar-light bg-light navbar-expand-lg">
+        <nav id="navbar" class="navbar navbar-light bg-light navbar-expand-lg">
             <a href="#" class="navbar-brand"></a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
-                open
+                menu
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarcollapse">
@@ -69,19 +72,19 @@
                             <div class="card-body card-body-cascade text-center">                    
                                 <!--Google map-->
                                 <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
-                                    <iframe src="https://maps.google.com/maps?q=Barcelona&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.771762016921!2d4.351253113609178!3d50.847207720369546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47f4614f1f1%3A0xb03c355d8fe2cfb6!2sGrand-Place!5e0!3m2!1sfr!2sbe!4v1558347477713!5m2!1sfr!2sbe"
                                     frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>   
                                 <div class="coord">
-                                    <p class="card-text">Rue du Sarrasin n°30, 1000 Bruxelles</p>
-                                    <p>02/222.22.22</p>   
+                                    <p class="card-text"><i class="fas fa-map-marker-alt"></i> Rue du Sarrasin n°30, 1000 Bruxelles</p>
+                                    <p><i class="fas fa-phone"></i> 02/222.22.22</p>   
                                 </div>
                             </div>
                             <!--/.Card content-->                       
                         </div>
                         <!--/.Card-->
                         <div class="containertable" style="margin-top:30px">
-                            <table class="table">
+                            <table class="table d-none d-lg-block">
                                 <thead>
                                     <tr>
                                         <th>Jour</th>
@@ -93,6 +96,7 @@
                                     <tr>
                                         <td>lundi</td>
                                         <td>fermé</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td>mardi</td>
@@ -125,6 +129,43 @@
                                         <td>15h00</td>
                                     </tr>
                                 </tbody>
+                            </table>
+                            <table class="table petit d-lg-none">
+                                <thead>
+                                    <tr>
+                                        <th>Jour</th>
+                                        <th>Horaires</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>lundi</td>
+                                        <td>fermé</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mardi</td>
+                                        <td>18h30-22h00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mercredi</td>
+                                        <td>18h30-22h00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>jeudi</td>
+                                        <td>18h30-22h00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>vendredi</td>
+                                        <td>18h30-22h30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>samedi</td>
+                                        <td>11h00-15h00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dimanche</td>
+                                        <td>11h00-15h00</td>
+                                    </tr>
                             </table>                                                            
                         </div>
                     </div>
@@ -142,20 +183,20 @@
                             <!--Card content-->
                             <div class="card-body card-body-cascade text-center">                    
                                 <!--Google map-->
-                                <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
-                                    <iframe src="https://maps.google.com/maps?q=Barcelona&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="height: 300px">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1786.558094464796!2d4.400115421976791!3d50.70927666499112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3d1c32d7f21d9%3A0x40099ab2f4d7280!2sWaterloo!5e0!3m2!1sfr!2sbe!4v1558347705041!5m2!1sfr!2sbe" 
+                                        frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div> 
                                 <div class="coord">
-                                    <p class="card-text">Rue de l'amarante n°29, 1410 Waterloo</p>
-                                    <p>02/333.33.33</p>  
+                                    <p class="card-text"><i class="fas fa-map-marker-alt"></i> Rue de l'amarante n°29, 1410 Waterloo</p>
+                                    <p><i class="fas fa-phone"></i> 02/333.33.33</p>  
                                 </div>
                             </div>
                             <!--/.Card content-->                        
                         </div>
                         <!--/.Card-->
                         <div class="containertable" style="margin-top:30px">
-                            <table class="table">
+                            <table class="table d-none d-lg-block">
                                 <thead>
                                     <tr>
                                         <th>Jour</th>
@@ -167,6 +208,7 @@
                                     <tr>
                                         <td>lundi</td>
                                         <td>fermé</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td>mardi</td>
@@ -199,17 +241,82 @@
                                         <td>15h00</td>
                                     </tr>
                                 </tbody>
-                            </table>                                                            
+                            </table> 
+                            <table class="table petit d-lg-none">
+                                <thead>
+                                    <tr>
+                                        <th>Jour</th>
+                                        <th>Horaires</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>lundi</td>
+                                        <td>fermé</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mardi</td>
+                                        <td>18h30-22h00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mercredi</td>
+                                        <td>18h30-22h00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>jeudi</td>
+                                        <td>18h30-22h00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>vendredi</td>
+                                        <td>18h30-22h30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>samedi</td>
+                                        <td>11h00-15h00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dimanche</td>
+                                        <td>11h00-15h00</td>
+                                    </tr>
+                                </tbody>
+                            </table>                                                           
                         </div>
                     </div>
                 </article>
             </div>
         </section>
     </div>
-
     <footer>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quidem earum consequuntur necessitatibus harum veniam voluptatem assumenda corporis quas provident reprehenderit, quam voluptates ea. Necessitatibus fuga alias nulla quidem id!
+        <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <a href="www.facebook.com"><p><i class="fab fa-facebook-f"></i> Notre page Facebook</p></a>
+                        <a href=""><p><i class="fab fa-yelp"></i> Profil Yelp</p></a>
+                        <a href=""><p><i class="fab fa-tripadvisor"></i> Trip Advisor</p></a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p><i class="fas fa-phone"></i> Bruxelles : 02/222.22.22</p>
+                        <p><i class="fas fa-phone"></i> Waterloo : 02/333.33.33</p>
+                        <p><i class="far fa-envelope"></i> Boucheedepain@restaurant.be</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
     </footer>
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

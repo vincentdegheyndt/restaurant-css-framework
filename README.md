@@ -1,3 +1,11 @@
+L'idée pour ce restaurant était de créer une enseigne gluten-free et bio misant sur une nourriture saine et appétissante.
+Le titre évoquant le pain est évidemment un jeu de mot car le pain est la première nourriture que les personnes intolérantes au gluten ne peuvent plus manger.
+Le gluten se trouve essentillement deans la farine de blé ce qui impose aux personnes intolérantes de manger du pain spécial à base de farine de riz, de sarrasin, ...
+La même idée s'applique également aux pâtes, aux pizzas, au hamburgers, aux tartes,...
+Il est donc tout à fait possible pour une personne intolérante au gluten de manger normalement chez elle mais beaucoup de restaurants ne propose pas encore d'options gluten-free vraiment appétissante d'ou l'intérêt de créer un restaurant qui propose des pâtes, pizzas, dessert et pain sans-gluten aux personnes concernées.
+
+Pour celà, je voulais donc intégrer le mot pain dans le titre et utiliser un background qui illustre le propos et aère également la présentation du site.
+La majorité du contenu du site est ensuite intégré dans une grid bootstrap avec un fond légèrement transparant afin que le pain reste visible en tout temps
 modèle
 
 Restaurants :
@@ -34,20 +42,7 @@ Restaurants :
     samedi	    11:00–15:00, 18:00–22:30
     dimanche	11:00–15:00, 18:00–22:00
 
-
-        Menu:
-            Bruschetta et ses 4 tapenades
-            7.90 €
-            olive noire, artichaut, tomates ail basilic, aubergine
-            Crème de Tomate à la mascarpone et pesto de roquette
-            5.90 €
-            Antipasti de légumes grillés marinés à l’ail
-            13.90 €
-            Caviar d’aubergine parfumé à l’huile de truffe blanche et noisettes grillées
-            12.90 €
-            Salade piémontaise
-
-
+    
         Sharing
         Guacamole & patate douce
 
